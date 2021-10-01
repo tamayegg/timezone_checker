@@ -6,7 +6,7 @@ Application code was downloaded from @edeediong timezone_checker repo. This appl
 #### Workflow used - publish.yml
 Publish python distributions to TestPyPI whenever there is a push/pull to master \ 
 Steps: \
-a. Build a job that runs on ubuntu \  
+a. Build a job that runs on ubuntu    
 b. Checkout the project and set up py env \ 
 c. Install dependencies and test code against a linter \ 
 d. Create source distribution \ 
