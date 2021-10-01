@@ -1,14 +1,8 @@
 from setuptools import setup, find_packages
 
-"""
-to set up
-This is to test the workflow
-"""
-
-
 setup(
     name="timechecker-testinggh",
-    version="0.0.2",
+    version="0.0.3",
     description="An application that informs you of the time in different locations and timezones",
     packages=find_packages(),
     classifiers=[
