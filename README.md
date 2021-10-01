@@ -4,8 +4,8 @@
 Application code was downloaded from @edeediong timezone_checker repo. This application is used to tell the user the time in another timezone using the cmd. 
 
 #### Workflow used - publish.yml
-1. Publish python distributions to TestPyPI when there is a push/pull to master
-Steps:
+Publish python distributions to TestPyPI whenever there is a push/pull to master
+Steps: \
 a. Build a job that runs on ubuntu
 b. Checkout the project and set up py env
 c. Install dependencies and test code against a linter
