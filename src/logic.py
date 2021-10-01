@@ -53,4 +53,4 @@ def format_location(location):
     return location
 
 def test_func(word):
-    print(f"hello {word})
+    print(f"hello {word}")
