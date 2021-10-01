@@ -51,3 +51,6 @@ def timezones(zone):
 def format_location(location):
     location = location.replace(" ", "_")
     return location
+
+def test_func(word):
+    print(f"hello {word})
