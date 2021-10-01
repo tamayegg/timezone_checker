@@ -1,4 +1,4 @@
-name: Publish Python distributions to PyPI and TestPyPI
+name: Publish Python distributions to TestPyPI
 
 on:
   push:
@@ -9,9 +9,9 @@ on:
 jobs:
   build-n-publish:
     name: Build and publish Python distribution
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Set up Python 3.7
         uses: actions/setup-python@v1
         with:
@@ -33,3 +33,16 @@ jobs:
         with:
           password: ${{ secrets.test_pypi_password }}
           repository_url: https://test.pypi.org/legacy/
+  
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          date
+          ls -la
+          uname -a
+          df -h
+          which wget
+          which curl
+          curl -X POST -H "Content-Type: application/json" -d '{"value1":"New Updates to TestPyPI"}' https://maker.ifttt.com/trigger/git123/with/key/${{ secrets.IFTTT_KEY }}
+
