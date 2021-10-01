@@ -7,7 +7,7 @@ This is to test the workflow
 
 
 setup(
-    name="timechecker",
+    name="timechecker-testinggh",
     version="0.0.1",
     description="An application that informs you of the time in different locations and timezones",
     packages=find_packages(),
