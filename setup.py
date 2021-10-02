@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="timechecker-testinggh",
-    version="0.0.3",
+    version="0.0.4",
     description="An application that informs you of the time in different locations and timezones",
     packages=find_packages(),
     classifiers=[
